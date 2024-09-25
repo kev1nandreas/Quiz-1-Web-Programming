@@ -1,13 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hometown | My Personal Site</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        .permanent-marker-regular {
+            font-family: "Permanent Marker", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="bg-neutral-100">
+    <div class="relative">
+        <!-- navbar -->
+        <div class="navbar z-10 fixed w-full p-4 shadow-lg text-slate-200 bg-slate-300 bg-opacity-0 duration-500">
+            <div class="flex justify-center align-middle gap-16 md:text-lg">
+                <a class="hover:font-bold hover:underline hover:underline-offset-2" href="index.html">Home</a>
+                <a class="hover:font-bold hover:underline hover:underline-offset-2" href="profile.html">Profile</a>
+                <a class="hover:font-bold hover:underline hover:underline-offset-2" href="food.html">Food</a>
+                <a class="hover:font-bold hover:underline hover:underline-offset-2" href="tourist.html">Tourist</a>
+            </div>
+        </div>
+
+        <div class="bg-[url('/assets/pekanbaru.jpg')] h-screen w-screen bg-cover flex justify-center items-center">
+            <div class="text-white w-fit text-center">
+                <h1 class="text-7xl font-light permanent-marker-regular md:text-9xl">Pekanbaru</h1>
+                <h3 class="text-3xl my-4 md:text-5xl font-medium">Kota Bertuah</h3>
+            </div>
+            <div class="absolute -bottom-1 right-0 left-0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#F5F5F5" fill-opacity="1"
+                        d="M0,160L30,154.7C60,149,120,139,180,122.7C240,107,300,85,360,85.3C420,85,480,107,540,138.7C600,171,660,213,720,240C780,267,840,277,900,256C960,235,1020,181,1080,149.3C1140,117,1200,107,1260,96C1320,85,1380,75,1410,69.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- get to know -->
+
+    <div class="p-8 flex justify-center items-center gap-20">
+        <div id="about" class="max-w-[50rem]">
+            <h1 class="text-5xl font-bold text-center">Get To Know</h1>
+            <p class="text-center my-14">Pekanbaru is the capital city of Riau province in Indonesia, located on the
+                island of Sumatra. Known for its thriving oil industry, it serves as a major economic hub, particularly
+                in petroleum and palm oil production. The city is culturally rich, with a blend of Malay and Minangkabau
+                influences, reflected in its architecture, traditions, and cuisine. Pekanbaru also acts as a gateway to
+                nearby natural attractions like the Siak River and the Riau Archipelago. Despite its industrial growth,
+                the city is also focused on developing infrastructure and tourism.</p>
+        </div>
+        <div class="hidden xl:inline-block">
+            <img class="w-64 rotate-12" src="../assets/riau_map.gif" alt="">
+        </div>
+
+    </div>
+
+    <div class="w-full flex justify-center">
+        <iframe class="rounded-md md:w-[50rem] md:h-[30rem] w-96 h-64"
+            src="https://www.youtube.com/embed/QgTVsrIWOrU?si=GQO4TzyTc7-k3vNR" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- tourism place -->
+
+    <div class="p-8 flex justify-center items-center gap-20 mt-20">
+        <div class="relative xl:inline-block hidden w-80 lg:ml-32">
+            <div class="absolute w-72 -right-16">
+                <img class="-rotate-6 rounded-md" src="../assets/alam mayang.png" alt="">
+            </div>
+            <div class="absolute w-72 right-40">
+                <img class="rotate-6 rounded-md" src="../assets/an nur.jpeg" alt="">
+            </div>
+            <div class="absolute w-72 -bottom-10 -left-10">
+                <img class="rounded-md" src="../assets/soeman hs.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="tourism" class="max-w-[40rem] text-center">
+            <h1 class="text-5xl font-bold">Tourism Place</h1>
+            <p class="my-14">Pekanbaru, though known for its industry, offers several attractions for
+                visitors. The stunning An-Nur Grand Mosque and the culturally rich Sultan Syarif Kasim II Museum are
+                popular spots. The scenic Siak River provides beautiful views, while Taman Wisata Alam Mayang offers
+                outdoor activities for families. As a gateway to the Riau Archipelago, Pekanbaru has more to explore.
+            </p>
+            <a href="tourist.html">
+                <button
+                    class="select-none animate-[bounce_2s_infinite] rounded-full p-2 w-[10rem] bg-sky-300 border-2 border-slate-200 text-slate-600 hover:text-white hover:bg-slate-500 hover:border-slate-50 hover:border-2 duration-300">Read
+                    More
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div id="food" class="p-8 mt-20 flex justify-center gap-16">
+        <div class="text-center max-w-[40rem]">
+            <h1 class="text-5xl font-bold">Delicious Food</h1>
+            <p class="my-14">Pekanbaru's food scene is a blend of Malay and Minangkabau influences. Popular dishes
+                include Sate Danguang-Danguang, a savory beef satay, and Gulai Ikan Patin, a rich fish curry. For
+                snacks, try Kue Bangkit and Lempuk Durian, a sweet durian-based treat. With its unique flavors,
+                Pekanbaru offers a culinary experience worth exploring.
+            </p>
+            <a href="food.html"></a>
+                <button
+                    class="select-none animate-[bounce_2s_infinite] rounded-full p-2 w-[10rem] bg-sky-300 border-2 border-slate-200 text-slate-600 hover:text-white hover:bg-slate-500 hover:border-slate-50 hover:border-2 duration-300">Read
+                    More
+                </button>
+            </a>
+        </div>
+        <div class="hidden xl:inline-block">
+            <img class="w-80 rotate-3" src="../assets/foodpku.jpg" alt="">
+        </div>
+    </div>
+
 </body>
+
+<script src="app.js"></script>
+
 </html>
